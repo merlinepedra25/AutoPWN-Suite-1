@@ -1,37 +1,62 @@
-## Welcome to GitHub Pages
+## How does it work?
 
-You can use the [editor on GitHub](https://github.com/GamehunterKaan/AutoPWN-Suite/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+AutoPWN Suite uses nmap TCP-SYN scan to enumerate the host and detect the version of softwares running on it. After gathering enough information about the host, AutoPWN Suite automatically generates a list of "keywords" to search [NIST vulnerability database](https://www.nist.gov/).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Sample output
 
-### Markdown
+AutoPWN Suite has a very user friendly easy to read output.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+![Screenshot](https://raw.githubusercontent.com/GamehunterKaan/AutoPWN-Suite/main/images/autopwn.png)
 
-```markdown
-Syntax highlighted code block
+### Installation
 
-# Header 1
-## Header 2
-### Header 3
+You will need [nmap](https://nmap.org) in order to use this tool.
 
-- Bulleted
-- List
+On Debian based distros (Kali/Parrot etc):
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+sudo apt install nmap
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+On Arch based distros (BlackArch/ArchAttack etc):
 
-### Jekyll Themes
+```
+sudo pacman -S nmap
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/GamehunterKaan/AutoPWN-Suite/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+After installing nmap you can just clone the repo.
+
+```
+git clone https://github.com/GamehunterKaan/AutoPWN-Suite.git
+```
+### Usage
+
+```
+usage: autopwn.py [-h] [-o OUTPUT] [-t TARGET] [-st SCANTYPE] [-y]
+
+AutoPWN Suite
+
+options:
+  -h, --help            show this help message and exit
+  -o OUTPUT, --output OUTPUT
+                        Output file name. (Default:autopwn.log)
+  -t TARGET, --target TARGET
+                        Target range to scan. (192.168.0.1 or 192.168.0.0/24)
+  -st SCANTYPE, --scantype SCANTYPE
+                        Scan type. (Ping or ARP)
+  -y, --yesplease       Don't ask for anything. (Full automatic mode)
+```
+
+### Contributing to AutoPWN Suite
+
+I would be glad if you are willing to contribute this project. I am looking forward to merge your pull request unless its something that is not needed or just a personal preference.
+
+
+### Legal
+
+You may not rent or lease, distribute, modify, sell or transfer the software to a third party. AutoPWN Suite is free for distribution, and modification with the condition that credit is provided to the creator and not used for commercial use. You may not use software for illegal or nefarious purposes. No liability for consequential damages to the maximum extent permitted by all applicable laws.
+
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Having trouble using this tool? You can reach me out on [discord](https://github.com/GamehunterKaan/GamehunterKaan/blob/main/README.md) or create an issue!
