@@ -1,6 +1,3 @@
-# Wiki
-
-Welcome to AutoPWN Suite wiki!
 ![Banner](https://raw.githubusercontent.com/GamehunterKaan/AutoPWN-Suite/main/images/banner.png)
 
 
