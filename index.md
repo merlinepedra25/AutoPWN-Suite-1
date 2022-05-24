@@ -69,4 +69,4 @@ You may not rent or lease, distribute, modify, sell or transfer the software to 
 
 ### Support or Contact
 
-Having trouble using this tool? You can reach me out on [discord](https://github.com/GamehunterKaan/GamehunterKaan/blob/main/README.md) or create an issue!
+Having trouble using this tool? You can reach me out on [Discord](https://github.com/GamehunterKaan/GamehunterKaan/blob/main/README.md) or [create an issue!](https://github.com/GamehunterKaan/AutoPWN-Suite/issues/new)
