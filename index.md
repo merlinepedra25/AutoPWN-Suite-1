@@ -1,24 +1,24 @@
+# AutoPWN Suite
+
+AutoPWN Suite is a project for scanning vulnerabilities and exploiting systems automatically.
+
 ![Repo Size](https://img.shields.io/github/repo-size/GamehunterKaan/AutoPWN-Suite)
 ![GitHub top language](https://img.shields.io/github/languages/top/GamehunterKaan/AutoPWN-Suite)
 ![GitHub issues](https://img.shields.io/github/issues-raw/GamehunterKaan/AutoPWN-Suite)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/GamehunterKaan/AutoPWN-Suite)
 ![GitHub](https://img.shields.io/github/license/GamehunterKaan/AutoPWN-Suite)
 ![GitHub Repo stars](https://img.shields.io/github/stars/GamehunterKaan/AutoPWN-Suite?style=social)
-
 ![Banner](https://raw.githubusercontent.com/GamehunterKaan/AutoPWN-Suite/main/images/banner.png)
-
 
 ## How does it work?
 
 AutoPWN Suite uses nmap TCP-SYN scan to enumerate the host and detect the version of softwares running on it. After gathering enough information about the host, AutoPWN Suite automatically generates a list of "keywords" to search [NIST vulnerability database](https://www.nist.gov/).
-
 
 ### Sample output
 
 AutoPWN Suite has a very user friendly easy to read output.
 
 ![Screenshot](https://raw.githubusercontent.com/GamehunterKaan/AutoPWN-Suite/main/images/autopwn.png)
-
 
 ### Installation
 
@@ -41,8 +41,6 @@ After installing nmap you can just clone the repo.
 ```
 git clone https://github.com/GamehunterKaan/AutoPWN-Suite.git
 ```
-
-
 ### Usage
 
 ```
@@ -67,6 +65,24 @@ options:
   -e, --evade           Evade the detection of the scanner. (Warning : Slower and slightly inaccurate!)
 ```
 
+### TODO
+
+- [x] Vulnerability detection based on version.
+- [x] Easy to read output.
+- [x] Functionality output results to a file.
+- [ ] Function to automatically download exploit related to vulnerability.
+- [ ] .deb package for Debian based systems like Kali Linux and Parrot Security.
+- [ ] Arch Linux package for Arch based systems like BlackArch and ArchAttack.
+- [ ] pypi package for easily installing with just `pip install autopwn-suite`.
+- [ ] Seperate script for checking local privilege escalation vulnerabilities.
+- [ ] Windows and OSX support.
+- [ ] Functionality to brute force common services like `ssh`, `vnc`, `ftp` etc.
+- [ ] Built in reverse shell handler that automatically stabilizes shell like [pwncat](https://github.com/calebstewart/pwncat).
+- [ ] Function to generate reverse shell commands based on IP and port.
+- [ ] GUI interface.
+- [ ] Meterpreter payload generator with common evasion techniques like encryption, obfuscation, signing, sandbox detection etc.
+- [ ] Fileless malware unique to AutoPWN Suite.
+
 
 ### Contributing to AutoPWN Suite
 
@@ -80,4 +96,4 @@ You may not rent or lease, distribute, modify, sell or transfer the software to 
 
 ### Support or Contact
 
-Having trouble using this tool? You can reach me out on [Discord](https://github.com/GamehunterKaan/GamehunterKaan/blob/main/README.md) or [create an issue!](https://github.com/GamehunterKaan/AutoPWN-Suite/issues/new)
+Having trouble using this tool? You can reach me out on [discord](https://search.discordprofile.info/374953845438021635) or [create an issue!](https://github.com/GamehunterKaan/AutoPWN-Suite/issues/new/choose)
