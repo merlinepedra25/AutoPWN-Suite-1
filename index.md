@@ -20,6 +20,7 @@ AutoPWN Suite has a very user friendly easy to read output.
 
 <script id="asciicast-497930" src="https://asciinema.org/a/497930.js" async></script>
 
+
 ### Installation
 
 You will need [nmap](https://nmap.org) in order to use this tool.
@@ -36,11 +37,21 @@ On Arch based distros (BlackArch/ArchAttack etc):
 sudo pacman -S nmap
 ```
 
-After installing nmap you can just clone the repo.
+You can install it using pip. (sudo recommended)
+
+```
+sudo pip install autopwn-suite
+```
+
+OR
+
+You can clone the repo.
 
 ```
 git clone https://github.com/GamehunterKaan/AutoPWN-Suite.git
 ```
+
+
 ### Usage
 
 ```
