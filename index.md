@@ -23,20 +23,6 @@ AutoPWN Suite has a very user friendly easy to read output.
 
 ### Installation
 
-You will need [nmap](https://nmap.org) in order to use this tool.
-
-On Debian based distros (Kali/Parrot etc):
-
-```
-sudo apt install nmap
-```
-
-On Arch based distros (BlackArch/ArchAttack etc):
-
-```
-sudo pacman -S nmap
-```
-
 You can install it using pip. (sudo recommended)
 
 ```
@@ -81,6 +67,7 @@ options:
 - [x] Vulnerability detection based on version.
 - [x] Easy to read output.
 - [x] Functionality output results to a file.
+- [x] Automatically install nmap if its not installed.
 - [ ] Function to automatically download exploit related to vulnerability.
 - [ ] .deb package for Debian based systems like Kali Linux and Parrot Security.
 - [ ] Arch Linux package for Arch based systems like BlackArch and ArchAttack.
@@ -98,8 +85,6 @@ options:
 - [ ] Web application analysis.
 - [ ] Web application content discovery mode. (dirbusting)
 - [ ] Noisy mode. (Does nothing but creating a lot of noise)
-- [ ] Automatically install nmap if its not installed.
-
 
 ### Contributing to AutoPWN Suite
 
