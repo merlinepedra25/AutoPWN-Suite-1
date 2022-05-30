@@ -98,6 +98,7 @@ options:
 - [ ] Web application analysis.
 - [ ] Web application content discovery mode. (dirbusting)
 - [ ] Noisy mode. (Does nothing but creating a lot of noise)
+- [ ] Automatically install nmap if its not installed.
 
 
 ### Contributing to AutoPWN Suite
