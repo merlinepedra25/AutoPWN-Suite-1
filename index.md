@@ -14,12 +14,13 @@ AutoPWN Suite is a project for scanning vulnerabilities and exploiting systems a
 
 AutoPWN Suite uses nmap TCP-SYN scan to enumerate the host and detect the version of softwares running on it. After gathering enough information about the host, AutoPWN Suite automatically generates a list of "keywords" to search [NIST vulnerability database](https://www.nist.gov/).
 
+[Visit "PWN Spot!" for more information](https://pwnspot.com/posts/AutoPWN/)
+
 ### Demo
 
 AutoPWN Suite has a very user friendly easy to read output.
 
 <script id="asciicast-497930" src="https://asciinema.org/a/497930.js" async></script>
-
 
 ### Installation
 
@@ -36,7 +37,6 @@ You can clone the repo.
 ```
 git clone https://github.com/GamehunterKaan/AutoPWN-Suite.git
 ```
-
 OR
 
 You can download debian (deb) package from [releases.](https://github.com/GamehunterKaan/AutoPWN-Suite/releases)
@@ -53,8 +53,72 @@ You can use Google Cloud Shell.
 
 ### Usage
 
+Running with root privileges (sudo) is always recommended.
+
+Automatic mode (This is the intended way of using AutoPWN Suite.)
+
 ```console
-$ python3 autopwn.py -h
+autopwn-suite -y
+```
+
+Manual mode
+
+```console
+autopwn-suite
+```
+
+Specifying output file name. (Default : autopwn.log)
+
+```console
+autopwn-suite -o output.txt
+```
+
+Specifying target.
+
+```console
+autopwn-suite -t 192.168.0.1
+```
+
+Using a file as list of hosts.
+
+```console
+autopwn-suite -hf hosts.txt
+```
+
+Specifying a scan type.
+
+```console
+autopwn-suite -st ping
+```
+
+Specifying speed.
+
+```console
+autopwn-suite -s 4
+```
+
+Specifying API key (If this argument is not specified, API key is going to be read from api.txt file)
+
+```console
+autopwn-suite -a
+```
+
+Specifying scan mode. (Evade, Noise, Normal)
+
+```console
+autopwn-suite -m noise
+```
+
+Print version and exit.
+
+```console
+autopwn-suite -v
+```
+
+Help Menu
+
+```console
+$ autopwn-suite -h
 usage: autopwn.py [-h] [-o OUTPUT] [-t TARGET] [-hf HOSTFILE] [-st SCANTYPE] [-s SPEED] [-a API] [-y] [-m MODE] [-v]
 
 AutoPWN Suite
@@ -81,7 +145,7 @@ options:
 
 - [x] Vulnerability detection based on version.
 - [x] Easy to read output.
-- [x] Functionality output results to a file.
+- [x] Function to output results to a file.
 - [x] pypi package for easily installing with just `pip install autopwn-suite`.
 - [x] Automatically install nmap if its not installed.
 - [x] Noise mode. (Does nothing but creating a lot of noise)
@@ -103,7 +167,6 @@ options:
 - [ ] Option to use as a module.
 - [ ] Config file argument to specify configurations in a seperate config file.
 - [ ] Argument for passing custom nmap flags.
-
 
 ### Contributing to AutoPWN Suite
 
