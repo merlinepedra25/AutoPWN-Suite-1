@@ -59,7 +59,7 @@ OR
 You can download debian (deb) package from [releases.](https://github.com/GamehunterKaan/AutoPWN-Suite/releases)
 
 ```
-sudo apt-get install ./autopwn-suite_1.2.7.deb
+sudo apt-get install ./autopwn-suite_1.2.10.deb
 ```
 
 OR
@@ -110,12 +110,17 @@ options:
                         Specify a config file to use. (Default : None)
   -v, --version         Print version and exit.
 ```
+## Currently working on
+- Rewrite the nmap module from scratch
+- https://github.com/GamehunterKaan/AutoPWN-Suite/issues/9
 
 ## TODO
 
 Do you have a cool feature idea? [Create a feature request!](https://github.com/GamehunterKaan/AutoPWN-Suite/issues/new?assignees=&labels=&template=feature_request.md&title=)
 
 - [x] 11 completed.
+- [ ] https://github.com/GamehunterKaan/AutoPWN-Suite/issues/9
+- [ ] Support for smaller terminals.
 - [ ] Arch Linux package for Arch based systems like BlackArch and ArchAttack.
 - [ ] Seperate script for checking local privilege escalation vulnerabilities.
 - [ ] Windows and OSX support.
