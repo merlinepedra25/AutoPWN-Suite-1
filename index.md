@@ -8,7 +8,6 @@ AutoPWN Suite is a project for scanning vulnerabilities and exploiting systems a
 [![CodeQL](https://github.com/GamehunterKaan/AutoPWN-Suite/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/GamehunterKaan/AutoPWN-Suite/actions/workflows/codeql-analysis.yml)
 ![GitHub issues](https://img.shields.io/github/issues-raw/GamehunterKaan/AutoPWN-Suite)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/GamehunterKaan/AutoPWN-Suite)
-![GitHub](https://img.shields.io/github/license/GamehunterKaan/AutoPWN-Suite)
 ![GitHub Repo stars](https://img.shields.io/github/stars/GamehunterKaan/AutoPWN-Suite?style=social)
 ![Banner](https://raw.githubusercontent.com/GamehunterKaan/AutoPWN-Suite/main/images/banner.png)
 
@@ -60,7 +59,7 @@ OR
 You can download debian (deb) package from [releases.](https://github.com/GamehunterKaan/AutoPWN-Suite/releases)
 
 ```
-sudo apt-get install ./autopwn-suite_1.3.0.deb
+sudo apt-get install ./autopwn-suite_1.3.5.deb
 ```
 
 OR
@@ -139,12 +138,14 @@ Reporting:
 ## Currently working on
 - Rewrite the nmap module from scratch
 - https://github.com/GamehunterKaan/AutoPWN-Suite/issues/9
+- https://github.com/GamehunterKaan/AutoPWN-Suite/issues/13
 
 ## TODO
 
 Do you have a cool feature idea? [Create a feature request!](https://github.com/GamehunterKaan/AutoPWN-Suite/issues/new?assignees=&labels=&template=feature_request.md&title=)
 
 - [x] 12 completed.
+- [ ] https://github.com/GamehunterKaan/AutoPWN-Suite/issues/13
 - [ ] https://github.com/GamehunterKaan/AutoPWN-Suite/issues/9
 - [ ] Support for smaller terminals.
 - [ ] Arch Linux package for Arch based systems like BlackArch and ArchAttack.
@@ -163,7 +164,7 @@ Do you have a cool feature idea? [Create a feature request!](https://github.com/
 
 ## Contributing to AutoPWN Suite
 
-I would be glad if you are willing to contribute this project. I am looking forward to merge your pull request unless its something that is not needed or just a personal preference. [Click here for more info!](https://github.com/GamehunterKaan/AutoPWN-Suite/blob/main/.github/CONTRIBUTING.md)
+I would be glad if you are willing to contribute this project. I am looking forward to merge your pull request unless its something that is not needed or just a personal preference. Also minor changes and bug fixes will not be merged. Please create an issue for those and I will do it myself. [Click here for more info!](https://github.com/GamehunterKaan/AutoPWN-Suite/blob/main/.github/CONTRIBUTING.md)
 
 
 ## Legal
@@ -175,6 +176,7 @@ You may not rent or lease, distribute, modify, sell or transfer the software to 
 
 Having trouble using this tool? You can reach me out on [discord](https://search.discordprofile.info/374953845438021635), [create an issue](https://github.com/GamehunterKaan/AutoPWN-Suite/issues/new/choose) or [create a discussion!](https://github.com/GamehunterKaan/AutoPWN-Suite/discussions)
 
+
 ## Support & Hire Me!
 
-If you want to support my work and also get you job done you can hire me on [Fiverr](https://www.fiverr.com/kaangultekin)! I do various things such as website pentesting, python programming, malware hunting, PC optimization and mentoring.
+If you want to support my work and also get your job done you can hire me on [Fiverr](https://www.fiverr.com/kaangultekin)! I do various things such as website pentesting, python programming, malware hunting, PC optimization and mentoring.
