@@ -26,6 +26,7 @@ AutoPWN Suite is a project for scanning vulnerabilities and exploiting systems a
 - Argument for passing custom nmap flags.
 - Specify your arguments using a config file.
 - Send scan results via webhook or email.
+- Works on Linux, Windows and MacOS.
 
 ## How does it work?
 
@@ -38,6 +39,7 @@ AutoPWN Suite uses nmap TCP-SYN scan to enumerate the host and detect the versio
 AutoPWN Suite has a very user friendly easy to read output.
 
 <script id="asciicast-497930" src="https://asciinema.org/a/497930.js" async></script>
+
 
 ## Installation
 
@@ -59,7 +61,7 @@ OR
 You can download debian (deb) package from [releases.](https://github.com/GamehunterKaan/AutoPWN-Suite/releases)
 
 ```
-sudo apt-get install ./autopwn-suite_1.4.0.deb
+sudo apt-get install ./autopwn-suite_1.5.0.deb
 ```
 
 OR
@@ -143,7 +145,7 @@ Reporting:
 
 Do you have a cool feature idea? [Create a feature request!](https://github.com/GamehunterKaan/AutoPWN-Suite/issues/new?assignees=&labels=&template=feature_request.md&title=)
 
-- [x] 13 Completed.
+- [x] 14 Completed.
 - [ ] XSS tests.
 - [ ] SQL Injection tests.
 - [ ] Web app dirbusting.
@@ -151,7 +153,6 @@ Do you have a cool feature idea? [Create a feature request!](https://github.com/
 - [ ] Support for smaller terminals.
 - [ ] Arch Linux package for Arch based systems like BlackArch and ArchAttack.
 - [ ] Seperate script for checking local privilege escalation vulnerabilities.
-- [ ] Windows and OSX support.
 - [ ] Function to brute force common services like `ssh`, `vnc`, `ftp` etc.
 - [ ] Built in reverse shell handler that automatically stabilizes shell like [pwncat](https://github.com/calebstewart/pwncat).
 - [ ] Function to generate reverse shell commands based on IP and port.
